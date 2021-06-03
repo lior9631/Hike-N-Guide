@@ -1,0 +1,17 @@
+.preview-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+
+  @media (min-width: $tablet) {
+    padding-inline-start: 10vw;
+    padding-inline-end: 10vw;
+  }
+
+  @media (min-width: $desktop) {
+    padding-inline-start: 20vw;
+    padding-inline-end: 20vw;
+  }
+}

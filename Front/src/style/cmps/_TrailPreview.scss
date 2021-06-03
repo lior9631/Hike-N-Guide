@@ -1,0 +1,74 @@
+.trail-preview {
+  width: 100%;
+  min-width: 100%;
+  min-height: 18rem;
+  border-bottom: 1px solid $clr3;
+  transition: all 0.3s;
+  margin-block-end: 2rem;
+
+  & a {
+    text-decoration: none;
+    color: $clr1;
+  }
+
+  &-image {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+
+  &-info {
+    width: 100%;
+    padding-block-start: 0.5rem;
+    padding-block-end: 0.5rem;
+    color: $clr1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &-main-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-name {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  &-row {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: dimgray;
+    margin: 0;
+  }
+
+  &-rating {
+    align-self: flex-end;
+  }
+
+  &-full-star,
+  &-star {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  &-heading {
+    font-weight: 800;
+    color: black;
+  }
+
+  @media (min-width: $desktop) {
+    width: calc((100% - 2rem) / 3);
+    min-width: calc((100% - 2rem) / 3);
+
+    &:not(:nth-child(3n)) {
+      margin-inline-end: 1rem;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.guide-preview {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  min-height: 13rem;
+  border-bottom: 1px solid $clr3;
+  transition: all 0.3s;
+  margin-block-end: 2rem;
+
+  & a {
+    text-decoration: none;
+    color: $clr1;
+  }
+
+  &-image {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+  }
+
+  &-info {
+    width: 100%;
+    padding-block-start: 0.8rem;
+    padding-block-end: 1rem;
+    color: $clr1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &-main-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-name {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  &-full-star,
+  &-star {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  &-languages,
+  &-trails {
+    margin-block-start: 0.5rem;
+    margin-block-end: 0;
+    max-width: 100%;
+    text-align: start;
+    font-size: 0.8rem;
+    color: gray;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-heading {
+    color: black;
+    font-weight: 800;
+  }
+
+  @media (min-width: $desktop) {
+    width: calc((100% - 3rem) / 4);
+    min-width: calc((100% - 3rem) / 4);
+
+    &:not(:nth-child(4n)) {
+      margin-inline-end: 1rem;
+    }
+  }
+}

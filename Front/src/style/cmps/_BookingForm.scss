@@ -1,0 +1,64 @@
+.booking-form {
+  height: fit-content;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+
+  @media (min-width: $tablet) {
+    width: 30%;
+    position: sticky;
+    top: 1rem;
+  }
+
+  &-selected-trail {
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-block-end: 1rem;
+    font-size: 1rem;
+  }
+
+  &-title {
+    margin-inline-end: 0.5rem;
+    font-weight: 800;
+  }
+
+  &-price-container,
+  &-people-count-container {
+    margin-block-end: 1rem;
+  }
+
+  &-people-count {
+    width: 2.2rem;
+  }
+
+  &-submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    margin: 0 auto;
+    height: 2rem;
+    font-size: 1rem;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr4;
+      border: none;
+      color: $clr2;
+    }
+  }
+
+  .react-calendar {
+    width: 100%;
+    margin-block-end: 1rem;
+  }
+}

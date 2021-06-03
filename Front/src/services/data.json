@@ -1,0 +1,76 @@
+// Users collection
+//User
+var user = {
+    "_id": "1234",
+    "userName": "poiki123",
+    "fullName": "shoka koko",
+    "password": "1234",
+    "email": "shokakoko@gmail.com"
+    "isAdmin": false,
+    "imgUrl": "",
+    "rating": 5,
+    "reviewers_count": 30,
+    "languages": [
+        "he",
+        "en"
+    ],
+    "trails": [
+        {
+            "mini-trail"
+        }
+    ], // id, name, country
+    "price": 100,
+}
+//Trail collection
+
+var trail = {
+    "_id": "fg3d",
+    "name": "Sahara desert",
+    "location": {
+        "lat": 3213412423423,
+        "lng": 8473984760564,
+    },
+    "country": "Egypt",
+    "difficulty": "easy/medium/hard",
+    "distance": 30,
+    "days": 3,
+    "imgUrls": [
+        "",
+        ""
+    ],
+    "descriptions": ""
+}
+//Reviews collection
+
+var reviews= [
+    {
+        "_id": "5lf",
+        "by": "mini-user",
+        "rate": 3,
+        "at": 8948,
+        "trail": "mini-trail", //{_id : "t11", name: 'dsd'}
+        "txt": "Great Trail!"
+    },
+    {
+        "_id": "df1",
+        "by": "mini-user",
+        "rate": 3,
+        "at": 7678,
+        "guide": "mini-user",
+        "txt": "Great Guide!"
+    }
+]
+//Order collection 
+var order =
+{
+    "_id": "3214",
+    "createdAt": 276276,
+    "buyerUser": "mini-user", // {"_id", "userName", "fullName", "imgUrl"}
+    "trail": "mini-trail",
+    "guide": "mini-user",
+    "trailAt": 3878922,
+    "peopleCount": 2,
+    "price": 300,
+    "isConfirmed": false
+}
+//http://www.filltext.com/?rows=10&_id={string|10}&fname={firstName}&lname={lastName}&password={string|8}&isAdmin=false&imgUrl=&rating={numberRange|1,5}&reviewers_count={numberRange|3,15}&languages=[%22he%22,%20%22en%22]&trails={}

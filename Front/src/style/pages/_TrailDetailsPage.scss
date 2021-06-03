@@ -1,0 +1,189 @@
+.trail-details {
+  width: 100%;
+  padding-block-start: 0;
+
+  &-main-image {
+    width: 100%;
+    height: 98vh;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  &-main-header {
+    color: white;
+    margin: 0;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding-block-start: 50vh;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 10px black);
+  }
+
+  &-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-block-start: -4rem;
+    background-color: white;
+    border-radius: 1rem;
+
+    @media (min-width: $tablet) {
+      width: 60%;
+      margin-block-start: -5rem;
+    }
+  }
+
+  &-guides-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+  }
+
+  &-info-header {
+    font-size: 1.5rem;
+    padding-block-start: 1rem;
+    margin-block-end: 2rem;
+    text-align: center;
+  }
+
+  .no-padding-start {
+    padding-block-start: 0;
+  }
+
+  &-info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &-info-main {
+    width: 100%;
+    padding: 1rem;
+    padding-block-start: 0;
+    text-align: start;
+
+    @media (min-width: $tablet) {
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+
+  &-info-heading {
+    font-weight: bold;
+  }
+
+  &-images {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  &-image {
+    width: 100%;
+  }
+
+  &-image:not(:last-child) {
+    margin-block-end: 1rem;
+  }
+
+  &-info-aside {
+    width: 100%;
+    padding: 1rem;
+    padding-block-start: 0;
+
+    @media (min-width: $tablet) {
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+
+  &-map-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+  }
+
+  &-add-review-form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    & textarea {
+      width: 100%;
+      height: 10rem;
+    }
+  }
+
+  &-controls {
+    z-index: 100;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      width: auto;
+      padding: 0;
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      flex-flow: column nowrap;
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin-block-end: 1rem;
+    text-decoration: none;
+  }
+
+  &-back-button {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr4;
+      border: none;
+      color: $clr2;
+    }
+  }
+
+  &-edit-button {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: yellow;
+      border: none;
+      color: $clr2;
+    }
+  }
+
+  &-remove-button {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: red;
+      border: none;
+      color: $clr2;
+    }
+  }
+
+  &-edit-form {
+    margin-block-start: 5rem;
+  }
+}

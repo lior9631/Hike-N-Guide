@@ -1,0 +1,71 @@
+.homepage {
+  position: relative;
+  width: 100%;
+  padding-block-start: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  &-header {
+    width: 100%;
+    height: 80vh;
+    background-image: url(/img/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-block-end: 1rem;
+  }
+
+  &-main-heading {
+    position: absolute;
+    text-align: center;
+    line-height: 2.5rem;
+    width: 100%;
+    top: 6rem;
+    margin: 0;
+    color: $clr2;
+    font-size: 2rem;
+    filter: drop-shadow(0 0 10px gray);
+  }
+
+  &-list-heading {
+    font-size: 2rem;
+    margin: 1rem;
+    margin-block-end: 2rem;
+  }
+
+  &-show-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-block-end: 2rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr4;
+      border: none;
+      color: $clr2;
+    }
+  }
+
+  &-show-more-button:last-child {
+    margin-block-end: 2rem;
+  }
+
+  @media (min-width: $tablet) {
+    &-main-heading {
+      top: 8rem;
+      font-size: 2.5rem;
+    }
+  }
+}

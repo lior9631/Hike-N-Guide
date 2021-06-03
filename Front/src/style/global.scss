@@ -1,0 +1,39 @@
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/typography"; //Fonts
+
+// Basics
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/base";
+@import "basics/links";
+@import "basics/buttons";
+
+// Libs
+@import "hamburgers/_sass/hamburgers/hamburgers.scss";
+
+// Components
+@import "./cmps/List";
+@import "./cmps/GuidePreviev";
+@import "./cmps/TrailPreview";
+@import "./cmps/Navbar";
+@import "./cmps/Footer";
+@import "./cmps/BookingForm";
+@import "./cmps/ReviewAdd";
+@import "./cmps/MapContainer";
+@import "./cmps/ReviewList";
+@import "./cmps/Review";
+@import "./cmps/Order";
+@import "./cmps/modal";
+
+// Pages
+@import "./pages/App";
+@import "./pages/HomePage";
+@import "./pages/TrailPage";
+@import "./pages/BookingPage";
+@import "./pages/TrailAdd";
+@import "./pages/TrailDetailsPage";
+@import "./pages/GuidePage";
+@import "./pages/Profile";

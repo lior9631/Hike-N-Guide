@@ -1,0 +1,57 @@
+.trail-add-form {
+    // display: flex;
+    // flex-direction: column;
+}
+
+.add-name-country-distance input {
+    margin: 10px;
+}
+
+.add-difficulty-days input {
+    margin: 10px;
+}
+
+.trail-add-container {
+    display: grid;
+    grid-template-areas: "left right";
+    max-width: 726px;
+    margin: 0 auto;
+}
+
+.add-right-container {
+    width: 726px;
+}
+
+.add-left-container {
+    background: #807182;
+    overflow: hidden;
+    padding: 40px 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    // grid-column: 1/1
+}
+
+.add-set {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.add-trail-photo {
+    bottom: -5px;
+    // position: absolute;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.left-container .add-trail-photo:before {
+    background: #807182;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}

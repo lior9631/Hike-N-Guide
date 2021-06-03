@@ -1,0 +1,99 @@
+.user-profile {
+  width: 100%;
+  margin: 0 auto;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  &-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-block-end: 0.5rem;
+    align-self: center;
+  }
+
+  .user-details {
+    padding: 1rem;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      width: 35%;
+    }
+  }
+
+  .order-list {
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      width: 65%;
+    }
+    &-title {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+
+  &-name {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 0;
+    margin-block-end: 1rem;
+  }
+
+  &-title {
+    font-size: 1rem;
+    color: $clr1;
+    margin-inline-end: 0.5rem;
+    font-weight: bold;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-block-end: 1rem;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr4;
+      border: none;
+      color: $clr2;
+    }
+
+    @media (min-width: $tablet) {
+      width: 60%;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+    }
+  }
+
+  &-row {
+    margin: 0;
+    margin-block-end: 1rem;
+  }
+
+  @media (min-width: $tablet) {
+    width: 60%;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+}

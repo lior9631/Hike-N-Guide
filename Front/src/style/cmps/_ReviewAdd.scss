@@ -1,0 +1,76 @@
+.review-add {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+  &-rate-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block-end: 1rem;
+  }
+
+  &-form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label,
+  &-rate-label {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-block-end: 0.5rem;
+  }
+
+  &-title {
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-block-end: 1rem;
+  }
+
+  &-textarea {
+    outline: none;
+    border: 1px solid black;
+    padding: 0.5rem;
+    width: 100%;
+    height: 10rem;
+    font-size: 1rem;
+    margin-block-end: 1rem;
+  }
+
+  .img-star {
+    width: 15px;
+    height: 15px;
+  }
+
+  &-submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin-block-end: 1rem;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $clr4;
+      border: none;
+      color: $clr2;
+    }
+  }
+}
